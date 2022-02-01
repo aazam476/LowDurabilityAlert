@@ -1,0 +1,13 @@
+name: LowDurablityAlert
+version: '${project.version}'
+main: com.azamserver.lowdurablityalert.Main
+api-version: 1.18
+authors: [ Ali ]
+description: A spigot plugin thats alerts a player when their tool is on low durability
+website: https://card.azamserver.com/
+permissions:
+  lowdurabilityalert.*:
+    description: Allows players to be alerted when their tool is on low durability
+    default: op
+    children:
+      lowdurabilityalert.alert: true
